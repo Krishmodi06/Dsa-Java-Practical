@@ -1,0 +1,21 @@
+package javaTAsk;
+
+class Animal{
+	void animalAbility() {}
+}
+
+class Dog extends Animal{
+	@Override
+	void animalAbility(){
+		System.out.println("Dog barks loudly");
+	}
+}
+
+public class MethodOverringDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

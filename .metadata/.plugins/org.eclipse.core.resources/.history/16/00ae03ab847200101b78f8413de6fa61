@@ -1,0 +1,45 @@
+package javaTAsk;
+
+class person{
+	String name ;
+	int age;
+	
+	person(String name, int age ){
+		this.name=name;
+		this.age= age;
+	}
+	
+	void displayPersonInfo() {
+		System.out.printf("Name : %s",name);
+		System.out.printf("Age : %d", age);
+		
+	}
+}
+
+class Student extends person{
+	int studentId ;
+	String courseName;
+	
+	Student(String name,int age, int studentId,String courseName){
+		super(name,age);
+		this.studentId=studentId;
+		this.courseName=courseName;
+	}
+	
+	void displayStudentInfo(){
+		displayPersonInfo();
+		System.out.printf("Student Id : %d", studentId);
+		System.out.printf("Course Name : %s", courseName);
+	}
+}
+
+
+public class SingleInheritance {
+
+	public static void main(String[] args) {
+		Student student = new Student("Krish",18,1234,"AIML");
+		student.displayStudentInfo();
+		
+	}
+
+}

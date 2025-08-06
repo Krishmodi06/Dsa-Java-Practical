@@ -1,0 +1,29 @@
+package javaTAsk;
+
+
+class Book{
+	String name ;
+	String BookId;
+	String Author;
+	
+	Book(){
+		this.name="Nothing";
+	
+	}
+	
+	Book(){
+		this.name=name;
+		this.BookId =BookId;
+		
+	}
+	
+	Book(){
+		this.name=name;
+		this.BookId =BookId;
+		this.Author=Author;
+	}
+}
+
+public class OverloadingDemo {
+
+}
