@@ -1,6 +1,6 @@
 package javaTAsk;
 
-class Overloading {
+public class overloading {
     int add(int a, int b) {
         return a + b;
     }
@@ -9,14 +9,9 @@ class Overloading {
         return a + b;
     }
 
-    String add(String a, String b) {
-        return a + b;
-    }
-
     public static void main(String[] args) {
-        Overloading obj = new Overloading();
+        overloading obj = new overloading();
         System.out.println("Sum of integers: " + obj.add(5, 10));
-        System.out.println("Sum of doubles: " + obj.add(5.5, 4.5));
-        System.out.println("Concatenation: " + obj.add("Hello ", "World"));
+        System.out.println("Sum of doubles: " + obj.add(5.5, 10.5));
     }
 }
